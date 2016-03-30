@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Char TraCoeur Control's</title>
+		<script type="text/javascript" src="javascripts/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="javascripts/socket.io.min.js"></script>
+		<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+		<script src="javascripts/bootstrap-switch.min.js"></script>
+		<script type="text/javascript">
+			var socket = io.connect();
+      var imageData;
+      var seuil_ratio = 0.08;
+      var colortracked = undefined;
+		</script>
+		<script type="text/javascript" src="javascripts/client.js"></script>
+		<link rel='stylesheet' href='styles/bootstrap.min.css' />
+		<link rel='stylesheet' href='styles/bootstrap-switch.min.css' />
+		<link rel='stylesheet' href='styles/bootstrap-theme.min.css' />
+		<link rel='stylesheet' href='styles/smoothness/jquery-ui-1.8.5.custom.css' />
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation"><p class="navbar-text"><center><h2><font color="#eee">Char TraCoeur Controls</font></h2></center></p></nav><br><br>
+		<div class="container">
+			<div class="row">
+  				<div class="col-md-8">
+  					<div class="panel panel-success">
+  						<div class="panel-heading">Flux Camera</div>
+  						<div class="panel-body">
+							<center><div id='camera' style="width:640px; height:340px;"></div>
+									<canvas id='cnvs'></canvas><br><br></center>
+  						</div>
+					</div>
+  				</div>
+  				<div class="col-md-4">
+  					<div class="panel panel-info">
+  						<div class="panel-heading">Mode</div>
+  						<div class="panel-body">
+  							<div class="container">
+  								<h4>Keyboard : </h4>
+  								<input type="checkbox" name="keyboard" class="switch-mini" data-on="success" data-off="danger"><br><br>
+
+  								<h4>Xbox 360 Controller : <h4>
+  								<input type="checkbox" name="xboxpad" disabled class="switch-mini" data-on="success" data-off="danger"><br><br>
+
+  								<h4>Color Tracking : <h4>
+                  <input type="checkbox" name="tracking" class="switch-mini" data-on="success" data-off="danger"><br><br>
+
+                  <h4>Mobile Device Orientation : <h4>
+                  <input type="checkbox" name="mobile" class="switch-mini" data-on="success" data-off="danger"><br><br>
+  							</div>
+  						</div>
+					</div>
+					<div class="panel panel-default">
+              <div class="panel-heading">Options</div>
+              <div class="panel-body">
+                <div class="container">
+                  <button type="button" id="restartpicam" class="btn btn-primary btn-sm">Restart Raspicam</button>
+                </div>
+              </div>
+          </div>
+          <div class="panel panel-default">
+              <div class="panel-heading">Console Log</div>
+              <div class="panel-body">
+                <div id="log" style="height:40px;overflow:auto" class="container">
+                  
+                </div>
+              </div>
+          </div>
+				</div>
+  			</div>
+  		</div>
+
+  		<script type="text/javascript">
+  			$("[name='mobile']").bootstrapSwitch();
+        $("[name='keyboard']").bootstrapSwitch();
+  			$("[name='xboxpad']").bootstrapSwitch();
+  			$("[name='tracking']").bootstrapSwitch();
+  			$("[name='keyboard']").on('switch-change', function (e, data) {ckeyboard = data.value;});
+        $("[name='mobile']").on('switch-change', function (e, data) {cmobile = data.value;});
+        $("[name='tracking']").on('switch-change', function (e, data) {ctracking = data.value;document.addEventListener( 'mousedown', setColor, true );});
+  			$('#restartpicam').click(function() { restartpicam(); });
+  		</script>
+	</body>
+</html>

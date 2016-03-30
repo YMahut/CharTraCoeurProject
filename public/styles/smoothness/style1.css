@@ -1,0 +1,439 @@
+body {
+	background: black;
+	font-family:helvetica;	
+	font-size:11px;
+	color : white;
+}
+
+#header {
+	margin : 20px auto;
+	width : 810px;
+	height : 90px;
+	background-image:url(/Xwars/images/header.png);
+	background-repeat : no-repeat;
+	background : cover;
+	text-align : center;
+}
+
+#header-contentg{
+	float : left;
+	margin-left : 40px;
+	width : 310px;
+	height : 90px;
+}
+
+#header-contentd{
+	float : right;
+	width : 310px;
+	height : 90px;
+}
+
+#menu {
+	margin-top : 70px;
+	margin-left : 30px;
+	width : 180px;
+	height : 388px;
+	text-align : center;
+	float : left;
+	background-image:url(/Xwars/images/menu.png);
+	background-repeat : no-repeat;
+	background : cover;
+}
+
+#menu-user {
+	margin-top : 20px;
+	width : 180px;
+	height : 35px;
+	font-size:12px;
+}
+
+#menu-contenu {
+	margin : auto;
+	width : 180px;
+	height : 288px;
+	text-align : left;
+}
+
+#menu-planet {
+	font-weight:bold;
+	width : 180px;
+	height : 35px;
+}
+
+#contenu {
+	margin : auto;
+	width : 810px;
+	height : 630px;
+	text-align : center;
+}
+
+#contenu-top {
+	margin : auto;
+	width : 810px;
+	height : 40.5px;
+	background-image:url(/Xwars/images/contenu-top.png);
+
+}
+
+#contenu-contenu{
+	margin : auto;
+	width : 810px;
+	background-image:url(/Xwars/images/contenu-contenu.png);
+}
+
+#module{
+	display : inline-block;
+	margin : auto;
+	width : 800px;
+}
+
+#contenu-bottom{
+	margin : auto;
+	width : 810px;
+	height : 40.5px;
+	background-image:url(/Xwars/images/contenu-bottom.png);
+}
+
+#ress{
+ 	width : 90px;
+	height : 30px;
+	font-size:10px;
+	margin-top : 30px;
+	float : left;
+}
+
+#pseudo{
+	font-size : 15px;
+	margin : auto;
+	font-weight:bold;
+}
+
+#liens{
+	width : 180px;
+	height : 288px;
+	padding : 10 60;
+	line-height: 17px; 
+}
+	
+a:link 			{ color:#FFFFFF; text-decoration:underline}
+a:visited 		{ color:#FFFFFF; text-decoration:underline}
+a:hover 		{ color:#D83C3C; text-decoration:underline; cursor:hand}
+a:active 		{ color:#FFFFFF; text-decoration:underline}
+
+#global-apercu{
+	margin : auto;
+	width : 700px;
+}
+
+#messageadmin{
+	border: 2px solid red;
+	background-color: green;
+	height : auto;
+	font-weight:bold;
+	font-size:12px;
+}
+
+#infogeneral{
+	font-weight:bold;
+	border : 1px solid black;
+	background-color: grey;
+	padding : 2;
+	height : auto;
+}
+
+#infoplanet{
+	font-weight:bold;
+	border : 1px solid black;
+	background-color: grey;
+	padding : 2;
+	height : auto;
+}
+
+#event{
+	padding : 2;
+	border : 1px solid black;
+	background-color: orange;
+	height : auto;
+}
+
+#recherche{
+	padding : 4;
+	border : 1px solid black;
+	background-color: green;
+	height : auto;
+}
+
+#attaque{
+	padding : 4;
+	border : 1px solid black;
+	background-color: red;
+	height : auto;
+}
+
+#construction{
+	padding : 4;
+	border : 1px solid black;
+	background-color: green;
+	height : auto;
+}
+
+#info-user{
+	background-color: black;
+	height : auto;
+}
+	
+#info-user-label1{
+	padding : 2;
+	font-weight:bold;
+	background-color: #606060;
+	border : 1px solid black;
+	width : 344px;
+	float : left;
+}
+
+#info-user-value1{
+	padding : 2;
+	background-color: #606060;
+	border : 1px solid black;
+	width : 344px;
+	float : right;
+}
+	
+#info-user-label2{
+	padding : 2;
+	font-weight:bold;
+	background-color: grey;
+	border : 1px solid black;
+	width : 344px;
+	float : left;
+}
+
+#info-user-value2{
+	padding : 2;
+	background-color: grey;
+	border : 1px solid black;
+	width : 344px;
+	float : right;
+}
+
+#image-planet{
+	padding : 20px ;
+	height : auto;
+	width : 700px;
+	float : left;
+}
+
+#image-planet img{
+	border-radius : 20px;
+}
+
+#const{
+	background-color: black;
+	height : 40px;
+	width : 700px;
+	margin-bottom : 1px;
+}
+
+#infoconst{
+	float:left;
+	width : 694px;
+	font-weight:bold;
+	border : 1px solid black;
+	background-color: #606060;
+	padding : 2;
+	height : auto;
+}
+
+#const-label{
+	padding : 2;
+	background-color: #3D3D3D;
+	border : 1px solid black;
+	width : 150px;
+	float : left;
+}
+
+#const-value{
+	padding : 2;
+	background-color: #3D3D3D;
+	border : 1px solid black;
+	width : 538px;
+	float : right;
+}
+
+#const-label1{
+	padding : 2;
+	background-color: #3D3D3D;
+	border : 1px solid black;
+	width : 344px;
+	float : left;
+}
+
+#const-value1{
+	padding : 2;
+	background-color: #3D3D3D;
+	border : 1px solid black;
+	width : 344px;
+	float : right;
+}
+
+#building{
+	background-color: black;
+	height : 20px;
+	width : auto;
+}
+
+#c-name{
+	padding : 2;
+	background-color: grey;
+	border : 1px solid black;
+	width : 200px;
+	float : left;
+}
+
+#c-metal{
+	padding : 2;
+	background-color: grey;
+	border : 1px solid black;
+	width : 60px;
+	float : left;
+}	
+
+#c-cristal{
+	padding : 2;
+	background-color: grey;
+	border : 1px solid black;
+	width : 60px;
+	float : left;
+}
+
+#c-frubin{
+	padding : 2;
+	background-color: grey;
+	border : 1px solid black;
+	width : 60px;
+	float : left;
+}
+
+#c-orizin{
+	padding : 2;
+	background-color: grey;
+	border : 1px solid black;
+	width : 60px;
+	float : left;
+}
+
+#c-frurozin{
+	padding : 2;
+	background-color: grey;
+	border : 1px solid black;
+	width : 60px;
+	float : left;
+}
+
+#c-or{
+	padding : 2;
+	background-color: grey;
+	border : 1px solid black;
+	width : 60px;
+	float : left;
+}
+
+#c-tps{
+	padding : 2;
+	background-color: grey;
+	border : 1px solid black;
+	width : 60px;
+	float : left;
+}
+
+#c-run{
+	padding : 2;
+	background-color: green;
+	border : 1px solid black;
+	width : 26px;
+	float : left;
+}
+
+#search{
+	padding : 2;
+	background-color: #3D3D3D;
+	border : 1px solid black;
+	width : 694px;
+	float : left;
+}
+
+#qg{
+	padding : 3;
+	font-weight:bold;
+	border : 1px solid black;
+	background-color: #FF2626;
+	height : auto;
+	width : 692px;
+}
+
+#nrj{
+	padding : 3;
+	font-weight:bold;
+	border : 1px solid black;
+	background-color: #FF8330;
+	height : auto;
+	width : 692px;
+}
+	
+ul#menu_horizontal li { 
+	display : inline;
+	padding : 0 0.5em;
+}
+
+ul#menu_horizontal {
+	list-style-type : none; 
+}	
+	
+ul#menu_horizontal a:link {
+	color:#FFFFFF; 
+	text-decoration: none;
+}
+
+ul#menu_horizontal a:hover {
+	color:#D83C3C; 
+	text-decoration: none; 
+	cursor:hand
+}
+	
+#tree{
+ text-align : left;
+ float : left;
+	border : 1px solid black;
+	padding : 3;
+	padding-bottom : 5px;
+	font-weight:bold;
+	background-color: grey;
+	height : auto;
+	width : 342px;
+}
+
+#tree1{
+	text-align : left;
+	font-weight : bold;
+	background-color: grey;
+	height : auto;
+	width : 250px;
+}
+
+#tree2{
+	margin-left :40px;
+	font-weight : normal;
+	text-align : left;
+	margin-top : 5px;
+	background-color: grey;
+	height : auto;
+	width : 300px;
+}
+	
+	
+	
+	
+	
+	
+	
+	
